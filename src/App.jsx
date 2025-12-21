@@ -6,7 +6,7 @@ import DashboardHome from "./pages/DashboardHome";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/shadowlabs">
       <Routes>
         {/* Public Website Routes */}
         <Route element={<LandingLayout />}>
