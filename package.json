@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://SANTHOSHS12.github.io/shadowlabs/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
