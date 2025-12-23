@@ -3,95 +3,113 @@ import { Check } from "lucide-react";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 px-6 bg-white relative z-20">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-sm font-bold text-gray-400 mb-4 uppercase tracking-wide">Begin your Shadow journey</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-            Simple pricing for <br /> complex conversations.
-          </h3>
-        </div>
+    <section id="pricing" className="py-20 px-6 bg-white relative z-20">
+      <div className="max-w-7xl mx-auto">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-6">
 
           {/* Free Plan */}
-          <div className="rounded-3xl p-8 border border-gray-200 bg-white flex flex-col items-start min-h-[420px] hover:border-blue-200 transition-colors">
-            <h4 className="font-bold text-xl mb-2 text-gray-900">Free</h4>
-            <div className="flex items-baseline mb-6">
-              <span className="text-5xl font-bold text-gray-900">₹0</span>
+          <div className="rounded-3xl p-8 border border-gray-200 bg-white flex flex-col h-full hover:shadow-lg transition-shadow">
+            <div className="mb-8">
+              <span className="text-sm font-medium text-gray-500">Starter</span>
+              <h4 className="font-bold text-4xl mt-2 text-gray-900">Free</h4>
             </div>
+
             <Button variant="dark" className="w-full mb-8 font-bold">
-              Get Started
+              Download App
             </Button>
-            <ul className="space-y-4 flex-1">
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Real-time transcription
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Basic analysis
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                1 hour storage
-              </li>
-            </ul>
+
+            <p className="text-gray-500 text-sm mb-6 font-medium">All essential features.</p>
+
+            <div className="space-y-4 flex-1">
+              <div className="flex items-start gap-3 text-sm text-gray-600">
+                <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                <span>Limited AI responses</span>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-gray-600">
+                <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                <span>Limited meeting notetaking</span>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-gray-600">
+                <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                <span>Customize instructions & upload files</span>
+              </div>
+              <div className="flex items-start gap-3 text-sm text-gray-600">
+                <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                <span>Ask AI about all your past meetings</span>
+              </div>
+            </div>
           </div>
 
-          {/* Pro Plan - Highlighted White Theme */}
-          <div className="rounded-3xl p-8 bg-white border-2 border-blue-600 flex flex-col items-start relative min-h-[460px] shadow-2xl shadow-blue-100 transform md:-translate-y-6">
-            <div className="absolute top-0 right-0 bg-blue-600 text-white text-[10px] uppercase font-bold px-3 py-1 rounded-bl-xl rounded-tr-[22px]">
-              Most Popular
+          {/* Pro Plan */}
+          <div className="rounded-3xl p-8 border border-gray-200 bg-white flex flex-col h-full hover:shadow-lg transition-shadow">
+            <div className="mb-8">
+              <span className="text-sm font-medium text-gray-500">Pro</span>
+              <div className="flex items-baseline mt-2">
+                <h4 className="font-bold text-4xl text-gray-900">$20</h4>
+                <span className="text-gray-500 text-sm ml-2">/month billed annually*</span>
+              </div>
             </div>
-            <h4 className="font-bold text-xl mb-2 text-blue-600">Pro</h4>
-            <div className="flex items-baseline mb-6">
-              <span className="text-5xl font-bold text-gray-900">₹20</span>
-              <span className="text-gray-500 text-lg ml-1 font-medium">/mo</span>
-            </div>
-            <Button variant="primary" className="w-full mb-8 font-bold shadow-xl shadow-blue-200">
-              Subscribe Now
+
+            <Button variant="dark" className="w-full mb-8 font-bold">
+              Subscribe
             </Button>
-            <ul className="space-y-4 flex-1">
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-100 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Unlimited recording
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-100 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Advanced insights
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-100 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Custom vocabulary
-              </li>
-            </ul>
+
+            <p className="text-gray-500 text-sm mb-6 font-medium">All essential features.</p>
+
+            <div className="space-y-6 flex-1">
+              <div>
+                <p className="font-bold text-sm text-gray-900 mb-4">Everything in Starter, plus...</p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 text-sm text-gray-600">
+                    <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                    <span>Unlimited AI responses</span>
+                  </div>
+                  <div className="flex items-start gap-3 text-sm text-gray-600">
+                    <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                    <span>Unlimited meeting notetaking</span>
+                  </div>
+                  <div className="flex items-start gap-3 text-sm text-gray-600">
+                    <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                    <span>Unlimited access to latest AI models</span>
+                  </div>
+                  <div className="flex items-start gap-3 text-sm text-gray-600">
+                    <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                    <span>Priority support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Enterprise Plan */}
-          <div className="rounded-3xl p-8 border border-gray-200 bg-white flex flex-col items-start min-h-[420px] hover:border-blue-200 transition-colors">
-            <h4 className="font-bold text-xl mb-2 text-gray-900">Enterprise</h4>
-            <div className="flex items-baseline mb-6">
-              <span className="text-5xl font-bold text-gray-900">₹50</span>
-              <span className="text-gray-400 text-lg ml-1 font-medium">/user</span>
+          <div className="rounded-3xl p-8 border border-gray-200 bg-white flex flex-col h-full hover:shadow-lg transition-shadow">
+            <div className="mb-8">
+              <span className="text-sm font-medium text-gray-500">Enterprise</span>
+              <div className="flex items-baseline mt-2">
+                <h4 className="font-bold text-4xl text-gray-900">$50</h4>
+                <span className="text-gray-500 text-sm ml-2">/month billed annually*</span>
+              </div>
             </div>
-            <Button variant="outline" className="w-full mb-8 font-bold border-2">
-              Contact Sales
+
+            <Button variant="dark" className="w-full mb-8 font-bold">
+              Subscribe
             </Button>
-            <ul className="space-y-4 flex-1">
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Admin dashboard
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                SSO & Security
-              </li>
-              <li className="text-sm text-gray-600 font-medium flex items-center gap-3">
-                <span className="bg-blue-50 rounded-full p-0.5"><Check className="w-3 h-3 text-blue-600" /></span>
-                Dedicated support
-              </li>
-            </ul>
+
+            <p className="text-gray-500 text-sm mb-6 font-medium">All essential features.</p>
+
+            <div className="space-y-6 flex-1">
+              <div>
+                <p className="font-bold text-sm text-gray-900 mb-4">Everything in Pro, plus...</p>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3 text-sm text-gray-600">
+                    <span className="bg-gray-100 rounded-full p-0.5 mt-0.5"><Check className="w-3 h-3 text-gray-600" /></span>
+                    <span>Completely hidden to meeting screen sharing software</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>

@@ -1,26 +1,27 @@
-
 import Hero from "../components/Hero";
-import FeaturesBusiness from "../components/FeaturesBusiness";
-import FeaturesSales from "../components/FeaturesSales";
-import FeaturesCore from "../components/FeaturesCore";
+import FeaturesSection from "../components/FeaturesSection";
+import BusinessSection from "../components/BusinessSection";
+import SalesSection from "../components/SalesSection";
+import FeaturesIntegrations from "../components/FeaturesIntegrations";
 import WhyUs from "../components/WhyUs";
-import Integrations from "../components/Integrations";
+
 import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
-import PrivacySection from "../components/PrivacySection";
+import ReadyToStart from "../components/ReadyToStart";
 
 export default function LandingPage() {
     return (
         <>
             <Hero />
-            <FeaturesBusiness />
-            <FeaturesSales />
-            <FeaturesCore />
+            <FeaturesSection />
+            <BusinessSection />
+            <SalesSection />
             <WhyUs />
-            <Integrations />
+            <FeaturesIntegrations />
+            <ReadyToStart />
             <Pricing />
-            <PrivacySection />
             <FAQ />
+
         </>
     );
 }
