@@ -9,7 +9,14 @@ import Pricing from "../components/Pricing";
 import FAQ from "../components/FAQ";
 import ReadyToStart from "../components/ReadyToStart";
 
+import { useEffect } from 'react';
+
 export default function LandingPage() {
+    // Force scroll to top on page load/refresh
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Hero />

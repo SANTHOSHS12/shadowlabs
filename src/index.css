@@ -3,6 +3,9 @@
 
 @layer base {
     html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+        /* Handles sticky header natively */
         font-family: 'Inter', sans-serif;
         background-color: #F8FAFC;
         /* bg-background */

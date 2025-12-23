@@ -4,13 +4,13 @@ import whyUsRef from '../assets/why_us_reference.png';
 
 export default function WhyUs() {
   return (
-    <section className="bg-white w-full flex justify-center py-12 md:py-24 overflow-hidden">
+    <section id="why-us" className="bg-white w-full flex justify-center py-12 md:py-24 overflow-hidden relative z-20">
       <div className="max-w-[1440px] px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-50px" }}
           className="w-full"
         >
           <img
