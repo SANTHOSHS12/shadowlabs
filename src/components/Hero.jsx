@@ -7,7 +7,7 @@ import DashboardPreview from "./DashboardPreview";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-10 overflow-hidden bg-white">
+    <section className="relative pt-24 md:pt-32 pb-10 overflow-hidden bg-white">
       <div className="max-w-7xl mx-auto px-6 text-center z-10 relative">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-[#0f172a] mb-8 mx-auto max-w-5xl leading-[1.1]">
           Your Wingman for <br />

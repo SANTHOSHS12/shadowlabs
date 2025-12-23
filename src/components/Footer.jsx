@@ -24,7 +24,7 @@ export default function Footer() {
           <a href="#why-us" className="hover:text-primary">Why Us?</a>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-100 flex justify-between items-center text-sm text-gray-400">
+      <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
         <div>© 2025 Shadowlabs Inc. All rights reserved.</div>
         <div className="flex gap-4">
           <a href="#" className="hover:text-gray-900">Privacy</a>
